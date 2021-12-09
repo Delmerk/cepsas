@@ -3,4 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/fbgtroub6xmz/cepsas/public_html/
     # Copiar todo de public a $DEPLOYPATH
-    - /bin/rsync -av public/ $DEPLOYPATH
+    # - /bin/rsync -av public/ $DEPLOYPATH
+    - /bin/cp -r /home/fbgtroub6xmz/cepsas/* $DEPLOYPATH
+    
